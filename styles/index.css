@@ -1,0 +1,13 @@
+header, main {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+#wrap {}
+#wrap header {}
+#wrap header h1 {}
+#wrap header h1 img {}
+
+#wrap header .menu {}
+#wrap header .menu ul {}
+#wrap header .menu ul li {}
