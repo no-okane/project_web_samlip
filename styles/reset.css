@@ -10,7 +10,7 @@ table, thead, tbody, tfoot, tr, th, td {
     line-height: 100%;
     letter-spacing: 0;
     word-spacing: 0;
-    color: #aaa;
+    color: #808080;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -23,6 +23,7 @@ a {text-decoration: none;}
 ul, ol, li {list-style: none;}
 fieldset {border: 0;}
 legend {display: none;}
-input {border: 0; outline: none;}
+input {border: 0; outline: none;}W
 button {border: 0; background: none; cursor: pointer;}
 table, tr, th, td {border-collapse: collapse;}
+select, option {border: 0; background: none; appearance: none;}

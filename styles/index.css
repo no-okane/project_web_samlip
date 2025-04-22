@@ -1,13 +1,94 @@
-header, main {
-    padding-left: 60px;
-    padding-right: 60px;
-}
+select, option {text-transform: uppercase;}
 
 #wrap {}
 #wrap header {}
 #wrap header h1 {}
-#wrap header h1 img {}
+#wrap header h1 a {}
+#wrap header h1 a img {}
 
-#wrap header .menu {}
-#wrap header .menu ul {}
-#wrap header .menu ul li {} 브
+#wrap header nav {}
+#wrap header nav .gnb {}
+
+
+/* ============컴퍼니============ */
+#wrap header nav .gnb li {}
+#wrap header nav .gnb li a {}
+#wrap header nav .gnb li a .company_menu {}
+#wrap header nav .gnb li a .company_menu dt {}
+#wrap header nav .gnb li a .company_menu dd {}
+
+
+/* ============브랜드============ */
+#wrap header nav .gnb li a .brands_menu {}
+#wrap header nav .gnb li a .brands_menu dt {}
+#wrap header nav .gnb li a .brands_menu dt a {}
+#wrap header nav .gnb li a .brands_menu dd {}
+#wrap header nav .gnb li a .brands_menu dd a {}
+#wrap header nav .gnb li a .brands_menu dd a img {}
+
+
+/* ============ir============ */
+#wrap header nav .gnb li a .ir_menu {}
+#wrap header nav .gnb li a .ir_menu dt {}
+#wrap header nav .gnb li a .ir_menu dt a {}
+#wrap header nav .gnb li a .ir_menu dd {}
+#wrap header nav .gnb li a .ir_menu dd a {}
+
+
+/* ============sns============ */
+#wrap header nav .gnb li a .sns_menu {}
+#wrap header nav .gnb li a .sns_menu li {}
+#wrap header nav .gnb li a .sns_menu li a {}
+#wrap header nav .gnb li a .sns_menu li a img {}
+
+
+/* ============recruit============ */
+#wrap header nav .gnb li a .recruit_menu {}
+#wrap header nav .gnb li a .recruit_menu li {}
+#wrap header nav .gnb li a .recruit_menu li a {}
+
+
+/* ============sub menu============ */
+#wrap header nav .gnb .sub_menu {}
+#wrap header nav .gnb .sub_menu li {}
+#wrap header nav .gnb .sub_menu li a {}
+#wrap header nav .gnb .sub_menu li a img {}
+/* 언어 선택 */
+#wrap header nav .gnb .sub_menu li ul {}
+#wrap header nav .gnb .sub_menu li ul li {}
+#wrap header nav .gnb .sub_menu li ul li a {}
+
+
+
+/* ============footer============ */
+footer {}
+footer .footer_wrap {}
+footer .footer_wrap .top {}
+
+/* 개인정보처리방침부터 시작 */
+footer .footer_wrap .top .fnb {}
+footer .footer_wrap .top .fnb a {}
+/* 개인정보처리방침 */
+footer .footer_wrap .top .fnb a:nth-child(1) {}
+/* 영상정보처리기기 운영관리방침 */
+footer .footer_wrap .top .fnb a:nth-child(2) {}
+footer .footer_wrap .top .fnb a img {}
+
+/* 패밀리 사이트, 사이트 맵 그룹 */
+footer .footer_wrap .top .footer_right {}
+footer .footer_wrap .top .footer_right .f_site {}
+
+/* 패밀리 사이트 셀렉트 태그 */
+footer .footer_wrap .top .footer_right .f_site .family_sites {}
+footer .footer_wrap .top .footer_right .f_site .family_sites option {}
+
+/* 사이트 맵 */
+footer .footer_wrap .top .footer_right .site_map {}
+footer .footer_wrap .top .footer_right .site_map a {}
+footer .footer_wrap .top .footer_right .site_map a span {}
+footer .footer_wrap .top .footer_right .site_map a span img {}
+
+/* 어드레스 태그 */
+footer .footer_wrap address {}
+footer .footer_wrap address p {}
+footer .footer_wrap address p em {}
