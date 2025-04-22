@@ -1,6 +1,8 @@
 # project_web_samlip 2025-4-21 ~
 ### 삼립 프로젝트 파일/폴더 구성
+* `./styles/common.css` : header, footer 공통 css
 * 메인 페이지 `index.html` : `./images`, `styles/index.css`, `./styles/reset.css`
+* COMPANY - 경영이념 페이지 : `company.html` :  `./images`, `./images/company` `styles/company.css`, `./styles/reset.css`
 -----
 ### 프로젝트 폴더 생성 후 작업해야 하는 것
 1. 프로젝트 폴더 생성 후 vs code 연결

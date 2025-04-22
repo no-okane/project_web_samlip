@@ -1,0 +1,26 @@
+main {}
+main .company_wrap {}
+
+
+/* 경로================================================== */
+main .company_wrap .path {}
+main .company_wrap .path span {}
+main .company_wrap .path span a {}
+main .company_wrap .path span img {}
+
+/* 제목================================================== */
+main .company_wrap .title_wrap {}
+main .company_wrap .title_wrap h1 {}
+main .company_wrap .title_wrap p {}
+
+/* 내용시작================================================== */
+main .company_wrap .bg {}
+
+
+/* 본문1================================================== */
+main .company_wrap .bg .contents {}
+main .company_wrap .bg .contents p {}
+
+
+/* 본문2 비전================================================== */
+main .company_wrap .bg .vision {}
