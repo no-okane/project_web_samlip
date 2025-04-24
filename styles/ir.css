@@ -1,0 +1,113 @@
+/* ir css================================================== */
+#wrap main {
+    text-align: center;
+    letter-spacing: -0.02rem;
+}
+
+
+/* 경로================================================== */
+#wrap main .ir_wrap .path {
+    background-color: #fcfcfc;
+    padding: 15px 60px 15px 0;
+    /* 모바일~태블릿까지 반응하는 반응형 웹이 아닌 pc에만 적응하는 웹을 제작하는 경우는 너비값을 pc의 표준값인 1920px에 맞춰서 피그마와 포토샵 디자인 */
+    /* 디자인 후 css 진행 시 1920px를 입력하지 않고 입력하는 선택자 요소의 특징이 블록인지 인라인인지 구분 */
+    /* 블록이라면 너비가 기본 100% 설정이기 때문에 pc의 w100% 채우므로 따로 너비값을 입력하지 않음 (높이 또한 마찬가지, 피그마의 hug기본값 내용에 맞추기와 뜻이 같음)*/
+    text-align: right;
+    font-size: 0.75rem;
+    color: #808080;
+}
+#wrap main .ir_wrap .path span {}
+#wrap main .ir_wrap .path span a {}
+#wrap main .ir_wrap .path span img {}
+#wrap main .ir_wrap .path span em {
+    color: #000;
+}
+
+
+/* 제목================================================== */
+#wrap main .ir_wrap .title_wrap {
+    padding: 80px 0;
+}
+#wrap main .ir_wrap .title_wrap h1 {
+    font-size: 3.75rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #000;
+}
+#wrap main .ir_wrap .title_wrap p {
+    color: #808080;
+}
+
+
+/* 본문 시작================================================== */
+#wrap main .ir_wrap .bg {
+    background-color: #fcfcfc;
+    padding: 80px 0;
+}
+
+
+/* 사각형 나열================================================== */
+#wrap main .ir_wrap .bg .contents {
+    width: 1280px; height: 250px;
+    margin: 0 auto;
+    padding: 0 80px;
+
+    /* float 오류 제거 - 하였으나 실패했으므로 높이값 설정*/
+    /* overflow: hidden; */
+
+    /* 플렉스 css - 같은 간격으로 정렬 */
+    display:flex; 
+    flex-wrap:wrap;
+    justify-content:space-between
+}
+
+/* 레이아웃 위치 정렬 기법 */
+/* inline block - float - flex - grid - position -> til 메모*/
+#wrap main .ir_wrap .bg .contents a {
+    /* float 정렬 - 나란히 일직선으로 정렬 */
+    float: left;
+
+    width: 260px; height: 250px;
+    text-align: left;
+
+    /* 백그라운드 이미지 */
+    /* background: color image repeat attachment position */
+    background: #f5f5f5 no-repeat 90% 90%;
+    padding: 25px;
+    border: 1px solid #ddd;
+}
+
+#wrap main .ir_wrap .bg .contents a:hover {
+    /* a에 마우스 올렸을 때 디자인 */
+    background-color: #fff;
+    border: 1px solid #36B4E5;
+    /* box-shodow:x값 y값 blur값 색상 */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+#wrap main .ir_wrap .bg .contents a:nth-child(1) {
+    background-image: url(../images/ir/1.png);
+}
+#wrap main .ir_wrap .bg .contents a:nth-child(2) {
+    background-image: url(../images/ir/2.png);
+}
+#wrap main .ir_wrap .bg .contents a:nth-child(3) {
+    background-image: url(../images/ir/3.png);
+}
+#wrap main .ir_wrap .bg .contents a:nth-child(4) {
+    background-image: url(../images/ir/4.png);
+}
+
+#wrap main .ir_wrap .bg .contents a h2 {
+    color: #000;
+    font-weight: 700;
+    line-height: 125%;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+#wrap main .ir_wrap .bg .contents a p {
+    color: #808080;
+    font-weight: 500;
+    line-height: 125%;
+    font-size: 0.875rem;
+}
