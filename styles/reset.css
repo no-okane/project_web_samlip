@@ -26,4 +26,17 @@ legend {display: none;}
 input {border: 0; outline: none;}W
 button {border: 0; background: none; cursor: pointer;}
 table, tr, th, td {border-collapse: collapse;}
-select, option {border: 0; background: none; appearance: none;}
+select, option {border: 0; background: none; appearance: none; outline: none;}
+
+
+/* 크로스브라우징을 위한 인풋 태그 초기화==================================== */
+/* 웹브라우저 엔진 -webkit-, -moz-, -m-, -o- */
+/* 크롬 사파리 엣지 오페라 */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none; margin: 0;}
+/* 파이어폭스 */
+input[type=number] {
+    -moz-appearance: none;
+    margin: 0;
+}
