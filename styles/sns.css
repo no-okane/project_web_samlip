@@ -1,0 +1,125 @@
+/* sns css */
+
+#wrap {}
+#wrap main {}
+
+/* 경로======================================== */
+#wrap main #path {
+    text-align: right;
+    padding: 15px 60px;
+    font-size: 0.75rem;
+    background-color: #fcfcfc;
+    border-top: 1px solid #F1F1F1;
+    border-bottom: 1px solid #F1F1F1;
+}
+#wrap main #path a, #wrap main #path img {margin: 0 7px 0 0;}
+
+#wrap main #path a {}
+#wrap main #path img {}
+#wrap main #path span {
+    color: #000
+}
+
+
+
+/* 제목======================================== */
+#wrap main #sns_wrap .sns_title {
+    text-align: center;
+    padding: 80px 0;
+}
+#wrap main #sns_wrap .sns_title h1 {
+    margin-bottom: 20px;
+    font-size: 3.75rem;
+    font-weight: 700;
+    color: #000;
+}
+#wrap main #sns_wrap .sns_title p {
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+
+
+/* 본문 시작======================================== */
+#wrap main #sns_wrap {}
+
+/* 배경======================================== */
+#wrap main #sns_wrap .bg {
+    padding: 80px 0;
+    background-color: #fcfcfc;
+}
+
+/* 링크 시작======================================== */
+#wrap main #sns_wrap .youtube_insta_facebook_wrap {
+    width: 1280px;
+    padding: 0 75px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 공통(a)======================================== */
+#wrap main #sns_wrap .youtube_insta_facebook_wrap a {
+    width: 360px; height: 320px;
+    padding: 25px;
+    text-align: center;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    background-color: #F5F5F5;
+    border: 1px solid #DDDDDD;
+}
+
+/* 공통(a:hover)======================================== */
+#wrap main #sns_wrap .youtube_insta_facebook_wrap a:hover {
+    background-color: #fff;
+    border: 1px solid #36B4E5;
+
+    /* box-shodow:x값 y값 blur값 색상 */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+/* 공통(h2, h3, p)======================================== */
+#wrap main #sns_wrap .youtube_insta_facebook_wrap a h2 {}
+#wrap main #sns_wrap .youtube_insta_facebook_wrap a h3 {
+    font-size: 1.625rem;
+    font-weight: 700;
+    color: #000;
+}
+#wrap main #sns_wrap .youtube_insta_facebook_wrap a p {
+    font-size: 0.875rem;
+}
+
+
+
+/* 유튜브======================================== */
+#wrap main #sns_wrap .youtube_insta_facebook_wrap .youtube {}
+#wrap main #sns_wrap .youtube_insta_facebook_wrap .youtube h2 {}
+#wrap main #sns_wrap .youtube_insta_facebook_wrap .youtube h2 img {}
+#wrap main #sns_wrap .youtube_insta_facebook_wrap .youtube h3 {}
+#wrap main #sns_wrap .youtube_insta_facebook_wrap .youtube p {}
+
+
+/* 인스타======================================== */
+#wrap main #sns_wrap .youtube_insta_facebook_wrap .insta {}
+#wrap main #sns_wrap .youtube_insta_facebook_wrap .insta h2 {}
+#wrap main #sns_wrap .youtube_insta_facebook_wrap .insta h2 img {}
+#wrap main #sns_wrap .youtube_insta_facebook_wrap .insta h3 {}
+#wrap main #sns_wrap .youtube_insta_facebook_wrap .insta p {}
+
+/* 페이스북======================================== */
+#wrap main #sns_wrap .youtube_insta_facebook_wrap .facebook {}
+#wrap main #sns_wrap .youtube_insta_facebook_wrap .facebook h2 {}
+#wrap main #sns_wrap .youtube_insta_facebook_wrap .facebook h2 img {}
+#wrap main #sns_wrap .youtube_insta_facebook_wrap .facebook h3 {}
+#wrap main #sns_wrap .youtube_insta_facebook_wrap .facebook p {}

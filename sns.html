@@ -5,22 +5,20 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>기업지배구조 | SPC 삼립</title>
+    <title>SNS | SPC삼립</title>
 
-    <!-- 웹폰트 -->
-    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
+        <!-- 웹폰트 -->
+        <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
 
-    <!-- css 리셋 -->
-    <link href="./styles/reset.css" rel="stylesheet">
-
-    <!-- 커먼 외부 스타일 -->
-    <link href="./styles/common.css" rel="stylesheet">
-
-    <!-- 외부 스타일 -->
-    <link href="./styles/ir.css" rel="stylesheet">
+        <!-- css 리셋 -->
+        <link href="./styles/reset.css" rel="stylesheet">
+    
+        <!-- 커먼 외부 스타일 -->
+        <link href="./styles/common.css" rel="stylesheet">
+    
+        <!-- 외부 스타일 -->
+        <link href="./styles/sns.css" rel="stylesheet">
 </head>
-
-
 <body>
     <div id="wrap">
         <!-- 헤더 시작=================================================================== -->
@@ -83,7 +81,7 @@
                     </li>
 
                     <li>
-                        <a href="#">IR</a>
+                        <a href="./ir.html">IR</a>
                             <!-- <dl class="ir_menu">
                                 <dt><a href="">기업지배구조</a></dt>
                                 <dd><a href="#">이사회</a></dd>
@@ -104,7 +102,7 @@
                     </li>
 
                     <li>
-                        <a href="./sns.html">SNS</a>
+                        <a href="#">SNS</a>
                             <!-- <ul class="sns_menu">
                                 <li><a href="#"><img src="" alt="공식 유튜브 채널 바로가기"></a></li>
                                 <li><a href="#"><img src="" alt="공식 인스타그램 계정 바로가기"></a></li>
@@ -134,7 +132,7 @@
                         </ul> -->
                     </li>
                     <li>
-                        <a hreaf="#">
+                        <a href="#">
                             <img src="./images/icon_gnb_search.png" alt="검색하기">
                         </a>
                     </li>
@@ -142,44 +140,41 @@
             </nav>
         </header>
 
+        <!-- 메인 시작=================================================================== -->
         <main>
-            <div class="ir_wrap">
-                <div class="path">
-                    <span>
-                        <a href="./index.html">Home</a>
-                        <img src="./images/icon_page1_arrow.png" alt="">
-                    </span>
-                    <span>
-                        <a href="./ir.html">ir</a>
-                        <img src="./images/icon_page1_arrow.png" alt="">
-                    </span>
-                    <span><em>기업지배구조</em></span>
-                </div>
+            <!-- 제목==================================================== -->
+            <div id="path">
+                <a href="./index.html">Home</a>
+                <img src="./images/icon_page1_arrow.png" alt="">
+                <span>Social Networks</span>
+            </div>
+            <!-- 경로 끝==================================================== -->
 
-                <!-- 기업지배구조 제목 -->
-                <div class="title_wrap">
-                    <h1>기업지배구조</h1>
-                    <p>이사회와 경영진 간의 균형이 조화를 이루도록 노력하고 있습니다.</p>
-                </div>
 
-                <!-- 본문 시작 -->
+            <div id="sns_wrap">
+                <!-- 제목==================================================== -->
+                <div class="sns_title">
+                    <h1>소셜 네트워크</h1>
+                    <p>SPC삼립의 다양한 이벤트와 맛있는 이야기</p>
+                </div>
+                
+                <!-- 본문==================================================== -->
                 <div class="bg">
-                    <div class="contents">
-                        <a href="#">
-                            <h2>이사회</h2>
-                            <p>이사회 구성 및 운영<br>현황을 확인할 수<br>있습니다.</p>
+                    <div class="youtube_insta_facebook_wrap">
+                        <a class="youtube" href="#" target="_blank">
+                            <h2><img src="./images/sns/1 youtube.png" alt="SPC삼립 유튜브 계정 바로가기"></h2>
+                            <h3>YouTube</h3>
+                            <p>먹고 보고 소화하는 Samlip Studio</p>
                         </a>
-                        <a href="#">
-                            <h2>이사회 내 위원회</h2>
-                            <p>이사회 내 위원회 설치 및<br>구성 현황을 확인할 수 <br>있습니다.</p>
+                        <a class="insta" href="#" target="_blank">
+                            <h2><img src="./images/sns/2 insta.png" alt="SPC삼립 인스타그램 계정 바로가기"></h2>
+                            <h3>Instagram</h3>
+                            <p>보고, 공유하고, 저장하고 싶은 군침도는 콘텐츠</p>
                         </a>
-                        <a href="#">
-                            <h2>주주총회</h2>
-                            <p>주주총회 결과를 확인할 수<br>있습니다.</p>
-                        </dl>
-                        <a href="#">
-                            <h2>기업지배구조 관련<br>정보</h2>
-                            <p>고객과 함께하는<br>SPC삼립의 오시는 길을<br>안내합니다.</p>
+                        <a class="facebook" href="#" target="_blank">
+                            <h2><img src="./images/sns/3 facebook.png" alt="SPC삼립 페이스북 계정 바로가기"></h2>
+                            <h3>Facebook</h3>
+                            <p>맛있는 이야기로 하나 되는 소통 플랫폼</p>
                         </a>
                     </div>
                 </div>
@@ -203,32 +198,32 @@
                     <div class="footer_right">
                         <!-- 서버와 연결된 작업(로그인, 회원가입, 장바구니, 구매하기, 회원정보, 게시판 등)이 아닌 단순 수행 작업일 경우 input, button 등의 태그를 작성해도 form 태그를 추가 작성하지 않아도 됨 -->
                         <!-- <form action="#" method="get" id="footer_select"> -->
-                            <select name="family_sites" class="f_site">
-                                <option>Family Sites</option>
-                                <option value="https://www.paris.co.kr/">Paris Baguette</option>
-                                <option value="https://www.baskinrobbins.co.kr/">Baskin Robbins</option>
-                                <option value="https://www.dunkindonuts.co.kr/">Dunkin'</option>
-                                <option value="#">Paris Croissant</option>
-                                <option value="#">Shake Shack</option>
-                                <option value="#">Caffè Pascucci</option>
-                                <option value="#">Jamba Juice</option>
-                                <option value="#">Happy Point</option>
-                                <option value="#">Lagrillia</option>
-                                <option value="#">Passion 5</option>
-                                <option value="#">Queens Park</option>
-                                <option value="#">Vera</option>
-                                <option value="#">Lina's</option>
-                                <option value="#">Coffee @ Works</option>
-                                <option value="#">D.Queens Catering</option>
-                                <option value="#">Streat</option>
-                                <option value="#">Shany</option>
-                                <option value="#">The World Vine</option>
-                                <option value="#">SPC Group</option>
-                                <option value="#">SPC GFS</option>
-                                <option value="#">SPC Networks</option>
-                                <option value="#">SPC PACK</option>
-                                <option value="#">SPC Culinary Academy</option>
-                            </select>
+                        <select name="family_sites" class="f_site">
+                            <option>Family Sites</option>
+                            <option value="https://www.paris.co.kr/">Paris Baguette</option>
+                            <option value="https://www.baskinrobbins.co.kr/">Baskin Robbins</option>
+                            <option value="https://www.dunkindonuts.co.kr/">Dunkin'</option>
+                            <option value="#">Paris Croissant</option>
+                            <option value="#">Shake Shack</option>
+                            <option value="#">Caffè Pascucci</option>
+                            <option value="#">Jamba Juice</option>
+                            <option value="#">Happy Point</option>
+                            <option value="#">Lagrillia</option>
+                            <option value="#">Passion 5</option>
+                            <option value="#">Queens Park</option>
+                            <option value="#">Vera</option>
+                            <option value="#">Lina's</option>
+                            <option value="#">Coffee @ Works</option>
+                            <option value="#">D.Queens Catering</option>
+                            <option value="#">Streat</option>
+                            <option value="#">Shany</option>
+                            <option value="#">The World Vine</option>
+                            <option value="#">SPC Group</option>
+                            <option value="#">SPC GFS</option>
+                            <option value="#">SPC Networks</option>
+                            <option value="#">SPC PACK</option>
+                            <option value="#">SPC Culinary Academy</option>
+                        </select>
                         <!-- </form> -->
                         <div class="site_map">
                             <a href="#">

@@ -43,7 +43,11 @@ h2 {
     text-align: right;
     font-size: 0.75rem;
     color: #808080;
+    border-top: 1px solid #F1F1F1;
+    border-bottom: 1px solid #F1F1F1;
 }
+#wrap main .company_wrap a, #wrap main .company_wrap img {margin: 0 7px 0 0;}
+
 #wrap main .company_wrap .path span {}
 #wrap main .company_wrap .path span a {}
 #wrap main .company_wrap .path span img {}
