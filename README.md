@@ -1,9 +1,10 @@
 # project_web_samlip 2025-4-21 ~
 ### 삼립 프로젝트 파일/폴더 구성
-* `./styles/common.css` : header, footer 공통 css
+* header, footer 공통 css : `./styles/common.css`
 * 메인 페이지 `index.html` : `./images`, `styles/index.css`, `./styles/reset.css`
 * COMPANY - 경영이념 페이지 : `company.html` :  `./images`, `./images/company` `styles/company.css`, `./styles/reset.css`
 * IR - 기업지배구조 페이지 : `ir.html` :  `./images`, `./images/ir` `styles/ir.css`, `./styles/reset.css`
+* SNS - sns 페이지 :  `sns.html` :  `./images`, `./images/sns` `styles/sns.css`, `./styles/reset.css`
 
 
 -----
