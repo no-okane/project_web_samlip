@@ -95,6 +95,11 @@ h1, .gnb, .sub_menu {}
 #wrap header nav .gnb li a:hover {
     border-bottom: 5px solid #eee;
 }
+#wrap header nav .gnb li a:visited {
+    color: #36B4E5;
+    border-bottom: 5px solid #36B4E5;
+    /* 유지하려면 자바스크립트 필요 */
+}
 
 /* ============컴퍼니============ */
 #wrap header nav .gnb li a .company_menu {}
