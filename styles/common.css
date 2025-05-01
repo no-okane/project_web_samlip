@@ -118,7 +118,7 @@ h1, .gnb, .sub_menu {}
     left: 0; top: 92px;
     transform: translateX(-33%);
 
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.9);
 
     width: 100vw;
     padding: 50px 0;
@@ -199,11 +199,14 @@ h1, .gnb, .sub_menu {}
 #wrap header nav .gnb li .lnb_bg .lnb_company .lnb_depth1 li .lnb_depth2 .lnb_depth2 li:hover .lnb_depth2 {
     display: flex;
 }
-#wrap header nav .gnb li .lnb_bg .lnb_company .lnb_depth2 li .lnb_depth2 .lnb_depth2 li a {
+#wrap header nav .gnb li .lnb_bg .lnb_company .lnb_depth1 li .lnb_depth2 li a {
     font-size: 1rem;
     font-weight: 400;
 }
 
+#wrap header nav .gnb li .lnb_bg .lnb_company .lnb_depth1 li .lnb_depth2 li:hover a {
+    color: #36B4E5;
+}
 
 
 /* ============브랜드============ */
@@ -211,9 +214,9 @@ h1, .gnb, .sub_menu {}
 #wrap header nav .gnb .brands_menu .lnb_bg {
     position: absolute; /* 부모 설정된 요소 상대값(%)으로 설정 */
     left: 0; top: 92px;
-    transform: translateX(-43%);
+    transform: translateX(-41%);
 
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.9);
 
     width: 100vw;
     padding: 50px 0;
@@ -236,40 +239,39 @@ h1, .gnb, .sub_menu {}
     opacity: 1; /* 불투명하게 설정 */
 }
 #wrap header nav .gnb .brands_menu .lnb_bg .lnb_brands {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     gap: 100px;
     text-align: center;
     width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
-    max-width: 1280px;
+    max-width: 1280px; */
 }
 #wrap header nav .gnb .brands_menu .lnb_bg .lnb_brands .lnb_depth1 {
-    width: 100%;
     display: flex;
-    flex-flow: row nowrap;
     justify-content: center;
-    gap: 100px;
     text-align: center;
+    gap: 100px;
 }
 #wrap header nav .gnb .brands_menu .lnb_bg .lnb_brands .lnb_depth1 li {}
 #wrap header nav .gnb .brands_menu .lnb_bg .lnb_brands .lnb_depth1 > li > a {
-    display: block;
-    font-size: 1.125rem;
+    /* font-size: 1.125rem;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 20px; */
 }
 #wrap header nav .gnb .brands_menu .lnb_bg .lnb_brands .lnb_depth1 li a h2 {
     font-size: 1.125rem;
     font-weight: 700;
-    color: #000;
+    color: #383838;
     margin-bottom: 20px;
+    text-transform: uppercase;
 }
 #wrap header nav .gnb .brands_menu .lnb_bg .lnb_brands .lnb_depth1 li a p {
-    font-size: 1.125rem;
     font-weight: 500;
+    color: #383838;
+    margin-top: 20px;
 }
 #wrap header nav .gnb .brands_menu .lnb_bg .lnb_brands .lnb_depth1 li a p img {}
 
@@ -277,19 +279,49 @@ h1, .gnb, .sub_menu {}
 #wrap header nav .gnb .brands_menu .lnb_bg .lnb_brands .lnb_depth1 li h2 {
     font-size: 1.125rem;
     font-weight: 700;
-    color: #000;
+    color: #383838;
     margin-bottom: 20px;
+    text-transform: uppercase;
 }
-#wrap header nav .gnb .brands_menu .lnb_bg .lnb_brands .lnb_depth1 li .inb_depth2 {
+#wrap header nav .gnb .brands_menu .lnb_bg .lnb_brands .lnb_depth1 li .lnb_depth2 {
+    width: 315px;
+    /* width: 100%;
+    display: grid !important;
+    grid-template-columns: repeat(2,1fr) !important;
+    max-width: 315px;
+    display: flex !important;
+    flex-flow: row wrap !important;
+    flex-wrap: wrap;
+    justify-content:space-between !important;
+    gap:10px !important;
+    max-width: 315px;
+    box-sizing: border-box; */
+    /* gap: 10px; */
+    display:flex; 
+    flex-flow:row wrap;
+    justify-content:space-between;
+    box-sizing: border-box;
+    gap: 10px;
+}
+#wrap header nav .gnb .brands_menu .lnb_bg .lnb_brands .lnb_depth1 li .lnb_depth2 li {
     display: flex;
     flex-flow: row wrap;
-    justify-content:space-between;
-    width: 315px;
-    gap:10px;
 }
-#wrap header nav .gnb .brands_menu .lnb_bg .lnb_brands .lnb_depth1 li .inb_depth2 li {}
-#wrap header nav .gnb .brands_menu .lnb_bg .lnb_brands .lnb_depth1 li .inb_depth2 li a {}
-#wrap header nav .gnb .brands_menu .lnb_bg .lnb_brands .lnb_depth1 li .inb_depth2 li a img {}
+#wrap header nav .gnb .brands_menu .lnb_bg .lnb_brands .lnb_depth1 li .inb_depth2 li a {
+    /* display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start; */
+    /* display: flex;
+    width: 100%; */
+}
+#wrap header nav .gnb .brands_menu .lnb_bg .lnb_brands .lnb_depth1 li .inb_depth2 li a img {
+    /* width: 150px;
+    height: 60px; */
+    /* width: 100%;
+    height: auto;
+    display: flex;
+    text-align: center; */
+}
 
 
 /* brands 서브 메뉴 개별 디자인 */
@@ -330,9 +362,9 @@ h1, .gnb, .sub_menu {}
 #wrap header nav .gnb .ir_menu .lnb_bg {
     position: absolute; /* 부모 설정된 요소 상대값(%)으로 설정 */
     left: 0; top: 92px;
-    transform: translateX(-46%);
+    transform: translateX(-48%);
 
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.9);
 
     width: 100vw;
     padding: 50px 0;
@@ -392,24 +424,129 @@ h1, .gnb, .sub_menu {}
     font-size: 1rem;
     font-weight: 400;
 }
-
+#wrap header nav .gnb .ir_menu .lnb_bg .lnb_ir .lnb_depth1 li .lnb_depth2 li:hover a {
+    color: #36B4E5;
+}
 
 
 
 
 /* ============sns============ */
 #wrap header nav .gnb .sns_menu {}
-/* #wrap header nav .gnb li a .sns_menu {}
-#wrap header nav .gnb li a .sns_menu li {}
-#wrap header nav .gnb li a .sns_menu li a {}
-#wrap header nav .gnb li a .sns_menu li a img {} */
+#wrap header nav .gnb .sns_menu .lnb_bg {
+    position: absolute; /* 부모 설정된 요소 상대값(%)으로 설정 */
+    left: 0; top: 92px;
+    transform: translateX(-52%);
+
+    background-color: rgba(255, 255, 255, 0.9);
+
+    width: 100vw;
+    padding: 50px 0;
+    margin: 0 auto;
+
+    /* 초기 숨기기 (마우스 올릴 때만 보이게) */
+    display: none;
+
+    /* 드롭다운 메뉴가 다른 요소 위에 오도록 */
+    z-index: 1000; 
+
+    box-sizing: border-box;
+}
+
+/* 메뉴 항목에 마우스를 올렸을 때 드롭다운 보이기 */
+#wrap header nav .gnb .sns_menu:hover > .lnb_bg {
+    display: block;
+    visibility: visible; /* 보이도록 설정 */
+    opacity: 1; /* 불투명하게 설정 */
+}
+#wrap header nav .gnb .sns_menu .lnb_bg .lnb_sns {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 100px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    max-width: 1280px;
+}
+#wrap header nav .gnb .sns_menu .lnb_bg .lnb_sns .lnb_depth1 {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 100px;
+    text-align: center;
+}
+#wrap header nav .gnb .sns_menu .lnb_bg .lnb_sns .lnb_depth1 li {}
+#wrap header nav .gnb .sns_menu .lnb_bg .lnb_sns .lnb_depth1 li a {}
+#wrap header nav .gnb .sns_menu .lnb_bg .lnb_sns .lnb_depth1 li a img {}
+
+#wrap header nav .gnb > li .lnb_sns a img {
+    filter: grayscale(100%) opacity(80%);
+    border: 1px solid #fff;
+}
+#wrap header nav .gnb > li .lnb_sns a:hover img {
+    filter: grayscale(0%);
+    border: 1px solid #000;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+
 
 
 /* ============recruit============ */
 #wrap header nav .gnb .recruit_menu {}
-/* #wrap header nav .gnb li a .recruit_menu {}
-#wrap header nav .gnb li a .recruit_menu li {}
-#wrap header nav .gnb li a .recruit_menu li a {} */
+#wrap header nav .gnb .recruit_menu .lnb_bg {
+    position: absolute; /* 부모 설정된 요소 상대값(%)으로 설정 */
+    left: 0; top: 92px;
+    transform: translateX(-57%);
+
+    background-color: rgba(255, 255, 255, 0.9);
+
+    width: 100vw;
+    padding: 50px 0;
+    margin: 0 auto;
+
+    /* 초기 숨기기 (마우스 올릴 때만 보이게) */
+    display: none;
+
+    /* 드롭다운 메뉴가 다른 요소 위에 오도록 */
+    z-index: 1000; 
+
+    box-sizing: border-box;
+}
+
+/* 메뉴 항목에 마우스를 올렸을 때 드롭다운 보이기 */
+#wrap header nav .gnb .recruit_menu:hover > .lnb_bg {
+    display: block;
+    visibility: visible; /* 보이도록 설정 */
+    opacity: 1; /* 불투명하게 설정 */
+}
+#wrap header nav .gnb .recruit_menu .lnb_bg .lnb_recruit {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 100px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    max-width: 1280px;
+}
+#wrap header nav .gnb .recruit_menu .lnb_bg .lnb_recruit .lnb_depth1 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 100px;
+    text-align: center;
+}
+#wrap header nav .gnb .recruit_menu .lnb_bg .lnb_recruit .lnb_depth1 li {}
+#wrap header nav .gnb .recruit_menu .lnb_bg .lnb_recruit .lnb_depth1 li a {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #383838;
+}
 
 
 

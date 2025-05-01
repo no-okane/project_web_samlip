@@ -26,7 +26,7 @@ legend {display: none;}
 input {border: 0; outline: none;}W
 button {border: 0; background: none; cursor: pointer;}
 table, tr, th, td {border-collapse: collapse;}
-select, option {border: 0; background: none; appearance: none; outline: none;}
+select, option, button {border: 0; background: none; appearance: none; outline: none;}
 
 
 /* 크로스브라우징을 위한 인풋 태그 초기화==================================== */
