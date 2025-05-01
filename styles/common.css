@@ -17,6 +17,8 @@ h1, .gnb, .sub_menu {}
     align-items: center;
     justify-content: space-between;
     flex-wrap: row nowrap;
+
+    position: relative;
 }
 
 
@@ -76,12 +78,16 @@ h1, .gnb, .sub_menu {}
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: row nowrap;
+    flex-flow: row nowrap;
+
+    z-index: 10;
 }
 #wrap header nav .gnb li { 
     /* display: inline-block; */
+    /* 드롭다운 상대설정 */
+    position: relative;
 }
-#wrap header nav .gnb li a {
+#wrap header nav .gnb > li > a {
     font-size: 1.125rem;
     font-weight: 600;
     letter-spacing: -0.02rem;
@@ -92,51 +98,318 @@ h1, .gnb, .sub_menu {}
     line-height: 92px;
 }
 
-#wrap header nav .gnb li a:hover {
+/* 호버 */
+#wrap header nav .gnb > li > a:hover {
     border-bottom: 5px solid #eee;
 }
-#wrap header nav .gnb li a:visited {
+#wrap header nav .gnb > li > a:visited {
     color: #36B4E5;
     border-bottom: 5px solid #36B4E5;
     /* 유지하려면 자바스크립트 필요 */
 }
 
 /* ============컴퍼니============ */
-#wrap header nav .gnb li a .company_menu {}
-#wrap header nav .gnb li a .company_menu dt {}
-#wrap header nav .gnb li a .company_menu dt a {}
-#wrap header nav .gnb li a .company_menu dd {}
-#wrap header nav .gnb li a .company_menu dd a {}
+#wrap header nav .gnb li:first-child:hover .lnb_bg {
+    /* display: block; */
+}
+
+#wrap header nav .gnb li .lnb_bg {
+    position: absolute; /* 부모 설정된 요소 상대값(%)으로 설정 */
+    left: 0; top: 92px;
+    transform: translateX(-33%);
+
+    background-color: rgba(255, 255, 255, 0.7);
+
+    width: 100vw;
+    padding: 50px 0;
+    margin: 0 auto;
+
+    /* 초기 숨기기 (마우스 올릴 때만 보이게) */
+    display: none;
+
+    /* 드롭다운 메뉴가 다른 요소 위에 오도록 */
+    z-index: 1000; 
+
+    box-sizing: border-box;
+}
+
+/* 메뉴 항목에 마우스를 올렸을 때 드롭다운 보이기 */
+#wrap header nav .gnb .gnb_menu:hover > .lnb_bg {
+    display: block;
+    visibility: visible; /* 보이도록 설정 */
+    opacity: 1; /* 불투명하게 설정 */
+}
+
+
+#wrap header nav .gnb .gnb_menu .lnb_bg .lnb_company {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 100px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    max-width: 1280px;
+    /* padding: 0 60px; */
+}
+#wrap header nav .gnb .gnb_menu .lnb_bg .lnb_company .lnb_depth1 {
+    /* width: max-content;
+
+    margin: 0 auto;
+    text-align: center;
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    
+    gap: 100px; */
+
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 100px;
+    text-align: center;
+}
+#wrap header nav .gnb li .lnb_bg .lnb_company .lnb_depth1 > li {
+    margin: 0 0 0 0;
+}
+#wrap header nav .gnb li .lnb_bg .lnb_company .lnb_depth1 > li > a {
+    display: block;
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #383838;
+}
+
+
+#wrap header nav .gnb li .lnb_bg .lnb_company .lnb_depth1 li .lnb_depth2 {
+    /* display: flex;
+    flex-wrap: row nowrap;
+    justify-content: center;
+    align-items: center; */
+
+    /* display: none; */
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+}
+#wrap header nav .gnb li .lnb_bg .lnb_company .lnb_depth1 li .lnb_depth2 .lnb_depth2 li {}
+#wrap header nav .gnb li .lnb_bg .lnb_company .lnb_depth1 li .lnb_depth2 .lnb_depth2 li:hover .lnb_depth2 {
+    display: flex;
+}
+#wrap header nav .gnb li .lnb_bg .lnb_company .lnb_depth2 li .lnb_depth2 .lnb_depth2 li a {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
 
 
 /* ============브랜드============ */
-#wrap header nav .gnb li a .brands_menu {}
-#wrap header nav .gnb li a .brands_menu dt {}
-#wrap header nav .gnb li a .brands_menu dt a {}
-#wrap header nav .gnb li a .brands_menu dd {}
-#wrap header nav .gnb li a .brands_menu dd a {}
-#wrap header nav .gnb li a .brands_menu dd a img {}
+#wrap header nav .gnb .brands_menu {}
+#wrap header nav .gnb .brands_menu .lnb_bg {
+    position: absolute; /* 부모 설정된 요소 상대값(%)으로 설정 */
+    left: 0; top: 92px;
+    transform: translateX(-43%);
+
+    background-color: rgba(255, 255, 255, 0.7);
+
+    width: 100vw;
+    padding: 50px 0;
+    margin: 0 auto;
+
+    /* 초기 숨기기 (마우스 올릴 때만 보이게) */
+    display: none;
+
+    /* 드롭다운 메뉴가 다른 요소 위에 오도록 */
+    z-index: 1000; 
+
+    box-sizing: border-box;
+}
+
+/* 메뉴 항목에 마우스를 올렸을 때 드롭다운 보이기 */
+
+#wrap header nav .gnb .brands_menu:hover > .lnb_bg {
+    display: block;
+    visibility: visible; /* 보이도록 설정 */
+    opacity: 1; /* 불투명하게 설정 */
+}
+#wrap header nav .gnb .brands_menu .lnb_bg .lnb_brands {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 100px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    max-width: 1280px;
+}
+#wrap header nav .gnb .brands_menu .lnb_bg .lnb_brands .lnb_depth1 {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 100px;
+    text-align: center;
+}
+#wrap header nav .gnb .brands_menu .lnb_bg .lnb_brands .lnb_depth1 li {}
+#wrap header nav .gnb .brands_menu .lnb_bg .lnb_brands .lnb_depth1 > li > a {
+    display: block;
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+#wrap header nav .gnb .brands_menu .lnb_bg .lnb_brands .lnb_depth1 li a h2 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 20px;
+}
+#wrap header nav .gnb .brands_menu .lnb_bg .lnb_brands .lnb_depth1 li a p {
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+#wrap header nav .gnb .brands_menu .lnb_bg .lnb_brands .lnb_depth1 li a p img {}
+
+
+#wrap header nav .gnb .brands_menu .lnb_bg .lnb_brands .lnb_depth1 li h2 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 20px;
+}
+#wrap header nav .gnb .brands_menu .lnb_bg .lnb_brands .lnb_depth1 li .inb_depth2 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-between;
+    width: 315px;
+    gap:10px;
+}
+#wrap header nav .gnb .brands_menu .lnb_bg .lnb_brands .lnb_depth1 li .inb_depth2 li {}
+#wrap header nav .gnb .brands_menu .lnb_bg .lnb_brands .lnb_depth1 li .inb_depth2 li a {}
+#wrap header nav .gnb .brands_menu .lnb_bg .lnb_brands .lnb_depth1 li .inb_depth2 li a img {}
+
+
+/* brands 서브 메뉴 개별 디자인 */
+/* #wrap header nav .gnb > li #lnb_brands {}
+#wrap header nav .gnb > li #lnb_brands .lnb_depth1 {}
+#wrap header nav .gnb > li #lnb_brands .lnb_depth1 > li {}
+#wrap header nav .gnb > li #lnb_brands .lnb_depth1 > li > a {}
+#wrap header nav .gnb > li #lnb_brands .lnb_depth1 > li > a {}
+#wrap header nav .gnb > li #lnb_brands .lnb_depth1 > li > a h2 {}
+#wrap header nav .gnb > li #lnb_brands .lnb_depth1 > li > a p {}
+#wrap header nav .gnb > li #lnb_brands .lnb_depth1 > li > a p img {}
+#wrap header nav .gnb > li #lnb_brands .lnb_depth1 > li > .lnb_depth2 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-between;
+    width: 315px;
+    gap:10px;
+}
+#wrap header nav .gnb > li #lnb_brands .lnb_depth1 > li > .lnb_depth2 >li {}
+#wrap header nav .gnb > li #lnb_brands .lnb_depth1 > li > .lnb_depth2 >li > a {}
+#wrap header nav .gnb > li #lnb_brands .lnb_depth1 > li > .lnb_depth2 >li > a img {} */
+
+/* brands 서브 메뉴 개별 디자인 (이미지 효과)*/
+#wrap header nav .gnb > li .lnb_brands a img {
+    filter: grayscale(100%) opacity(80%);
+    border: 1px solid #fff;
+}
+#wrap header nav .gnb > li .lnb_brands a:hover img {
+    filter: grayscale(0%);
+    border: 1px solid #000;
+}
+
+
+
 
 
 /* ============ir============ */
-#wrap header nav .gnb li a .ir_menu {}
-#wrap header nav .gnb li a .ir_menu dt {}
-#wrap header nav .gnb li a .ir_menu dt a {}
-#wrap header nav .gnb li a .ir_menu dd {}
-#wrap header nav .gnb li a .ir_menu dd a {}
+#wrap header nav .gnb .ir_menu .lnb_bg {
+    position: absolute; /* 부모 설정된 요소 상대값(%)으로 설정 */
+    left: 0; top: 92px;
+    transform: translateX(-46%);
+
+    background-color: rgba(255, 255, 255, 0.7);
+
+    width: 100vw;
+    padding: 50px 0;
+    margin: 0 auto;
+
+    /* 초기 숨기기 (마우스 올릴 때만 보이게) */
+    display: none;
+
+    /* 드롭다운 메뉴가 다른 요소 위에 오도록 */
+    z-index: 1000; 
+
+    box-sizing: border-box;
+}
+
+/* 메뉴 항목에 마우스를 올렸을 때 드롭다운 보이기 */
+
+#wrap header nav .gnb .ir_menu:hover > .lnb_bg {
+    display: block;
+    visibility: visible; /* 보이도록 설정 */
+    opacity: 1; /* 불투명하게 설정 */
+}
+
+#wrap header nav .gnb .ir_menu .lnb_bg .lnb_ir {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 100px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    max-width: 1280px;
+}
+#wrap header nav .gnb .ir_menu .lnb_bg .lnb_ir .lnb_depth1 {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 100px;
+    text-align: center;
+}
+#wrap header nav .gnb .ir_menu .lnb_bg .lnb_ir .lnb_depth1 li {}
+#wrap header nav .gnb .ir_menu .lnb_bg .lnb_ir .lnb_depth1 > li > a {
+    display: block;
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #383838;
+}
+#wrap header nav .gnb .ir_menu .lnb_bg .lnb_ir .lnb_depth1 li .lnb_depth2 {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+}
+#wrap header nav .gnb .ir_menu .lnb_bg .lnb_ir .lnb_depth1 li .lnb_depth2 li {}
+#wrap header nav .gnb .ir_menu .lnb_bg .lnb_ir .lnb_depth1 li .lnb_depth2 li a {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+
 
 
 /* ============sns============ */
-#wrap header nav .gnb li a .sns_menu {}
+#wrap header nav .gnb .sns_menu {}
+/* #wrap header nav .gnb li a .sns_menu {}
 #wrap header nav .gnb li a .sns_menu li {}
 #wrap header nav .gnb li a .sns_menu li a {}
-#wrap header nav .gnb li a .sns_menu li a img {}
+#wrap header nav .gnb li a .sns_menu li a img {} */
 
 
 /* ============recruit============ */
-#wrap header nav .gnb li a .recruit_menu {}
+#wrap header nav .gnb .recruit_menu {}
+/* #wrap header nav .gnb li a .recruit_menu {}
 #wrap header nav .gnb li a .recruit_menu li {}
-#wrap header nav .gnb li a .recruit_menu li a {}
+#wrap header nav .gnb li a .recruit_menu li a {} */
 
 
 
@@ -312,4 +585,5 @@ h1, .gnb, .sub_menu {}
 }
 #wrap footer .footer_wrap address p em {
     font-weight: 600;
+    
 }
