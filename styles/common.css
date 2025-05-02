@@ -18,7 +18,13 @@ h1, .gnb, .sub_menu {}
     justify-content: space-between;
     flex-wrap: row nowrap;
 
-    position: relative;
+    /* position: relative; */
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    z-index: 9999;/* -1~0~999 단위 없음, 중첩 순서만 결정하는 포지션 선택 속성 */
+    background-color: #fff;
+    border-bottom: 1px solid #f1f1f1;
 }
 
 
