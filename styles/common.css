@@ -5,12 +5,16 @@ select, option {
 }
 h1, .gnb, .sub_menu {}
 
-#wrap {}
+#wrap {
+    min-width: 1900px;
+}
 
 /* 헤더 시작 */
 #wrap header {
     /* container (header) item (h1, nav, right_menu) */
     height: 92px;
+    width: 100%;
+    min-width: 1600px;
     padding: 0 60px;
 
     display: flex;
